@@ -1,0 +1,45 @@
+body {
+    border: solid;
+    color: white;
+    background-color: black;
+    margin: auto
+}
+
+div{
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    
+}
+
+.navigationbox {
+    background-color: blue;
+    border: solid;
+    border-color: black;
+}
+
+.navigationbox ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    gap: 7px;
+}
+
+.title {
+    background-color: rgb(100, 100, 100);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.formbox {
+    background-color: rgb(50, 50, 50);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.formbox li {
+    list-style: none;
+}
