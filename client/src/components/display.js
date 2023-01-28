@@ -16,8 +16,19 @@ export default function Display() {
     <div>
         <div className='title'>JSONS in Database</div>
         <div className='formbox'>
-        {data.map(data => 
-            (<li key={data.name}>{data.name + " " + data.datetime}</li>))}
+        <table>
+            <thead>
+                <th scope ="col">Name</th>
+                <th scope ="col">Date Added</th>
+            </thead>
+            <tbody>
+            {data.map(data => 
+                <tr className='row'>
+                    <td><a href={"http://localhost:8080/jsons/" + data.name}>{data.name}</a></td>
+                    <td>{data.datetime}</td>
+                </tr>)}
+            </tbody>
+        </table>
         </div>
     </div>
 )}

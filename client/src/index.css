@@ -43,3 +43,16 @@ a {
 .formbox li {
     list-style: none;
 }
+
+table {
+    background-color: black;
+    border: solid;
+    border-color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.row {
+    color: red;
+    
+}
