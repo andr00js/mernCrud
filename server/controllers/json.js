@@ -1,9 +1,7 @@
-
 const { json } = require('express')
-//Load Schema
+
 const JSON = require('../models/JSON')
 
-//Define Controller
 const getJSONS = async (req, res) => {
     const JSONList = await JSON.find()
     res.status(200).json(JSONList)
@@ -47,11 +45,4 @@ const updateJSON = async (req, res) => {
     res.status(200).json(updatedJSON)
 }
 
-//Export Controller
-module.exports = {
-    getJSONS, 
-    getJSON, 
-    addJSON, 
-    deleteJSON, 
-    updateJSON
-}
+module.exports = { getJSONS, getJSON, addJSON, deleteJSON, updateJSON }

@@ -1,0 +1,16 @@
+body {
+    border: solid;
+    color: white;
+    background-color: black;
+    margin: auto
+}
+
+div{
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    
+}

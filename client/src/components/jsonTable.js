@@ -1,12 +1,12 @@
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-export default function Display() {
+export default function JSONTable() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         Axios
-        .get("http://localhost:8080/jsons/")
+        .get("http://localhost:8080/")
         .then(response => {
         setData(response.data)
     })
@@ -24,7 +24,7 @@ export default function Display() {
             <tbody>
             {data.map(data => 
                 <tr className='row'>
-                    <td><a href={"http://localhost:8080/jsons/" + data.name}>{data.name}</a></td>
+                    <td><a href={"http://localhost:8080/" + data.name}>{data.name}</a></td>
                     <td>{data.datetime}</td>
                 </tr>)}
             </tbody>

@@ -1,13 +1,12 @@
 import Axios from 'axios';
-import Display from './display';
 
-export default function Crud() {
+export default function CRUDInterface() {
 
     const submitCreate = async (e) => {
         e.preventDefault();
         const jsonName = e.target.name.value;
         const database = await Axios.get(e.target.url.value)
-        await Axios.post("http://localhost:8080/jsons/", {
+        await Axios.post("http://localhost:8080/", {
         name: jsonName,
         database: database
         })
@@ -17,13 +16,12 @@ export default function Crud() {
     const submitDelete = async (e) => {
         e.preventDefault();
         const jsonName = e.target.name.value;
-        await Axios.delete("http://localhost:8080/jsons/"+jsonName)
+        await Axios.delete("http://localhost:8080/"+jsonName)
         window.location.replace("http://localhost:3000/")
     }
 
     return (
         <div>
-            <Display/> 
             <div className = "title">Add/Remove JSON</div>
             <form className ="formbox" onSubmit={submitCreate}>
                 <input

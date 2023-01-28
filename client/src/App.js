@@ -1,6 +1,8 @@
+import "./app.css"
+import "./components/components.css"
 import { BrowserRouter } from 'react-router-dom'
-import Router from './components/router'
-import Navigation from './components/navigation'
+import Router from './pages/router'
+
 
 export default function App() {
   return (
