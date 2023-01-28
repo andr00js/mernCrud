@@ -28,7 +28,7 @@ export default function CompareJSONS () {
             <tbody>
             {data.map(data =>
                 <tr>
-                    <td>{data.name}</td>
+                    <td><a href={"http://localhost:8080/" + data.name}>{data.name}</a></td>
                     <td>{data.database.data.stone}</td>
                     <td>{data.database.data.wood}</td>
                     <td>{data.database.data.iron}</td>
