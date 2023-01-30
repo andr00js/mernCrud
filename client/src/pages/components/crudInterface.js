@@ -10,14 +10,14 @@ export default function CRUDInterface() {
         name: jsonName,
         database: database
         })
-        window.location.replace("http://localhost:3000/")
+        window.location.replace("http://localhost:3000/crud")
     }
 
     const submitDelete = async (e) => {
         e.preventDefault();
         const jsonName = e.target.name.value;
         await Axios.delete("http://localhost:8080/"+jsonName)
-        window.location.replace("http://localhost:3000/")
+        window.location.replace("http://localhost:3000/crud")
     }
 
     return (

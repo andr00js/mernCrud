@@ -1,7 +1,7 @@
 import {Route, Routes}  from 'react-router-dom'
 import Navigation from './navigation'
 import Home from '../pages/home'
-import Crud from '../pages/crud/crud'
+import Crud from '../pages/crud'
 
 export default function Router() { return (
     <div>

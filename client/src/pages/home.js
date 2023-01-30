@@ -1,6 +1,9 @@
+import DisplayDatabase from './components/displayDatabase'
+
+
 export default function Home () { return (
     <div>
-        <p>This is the home page</p>
+        <p><DisplayDatabase/></p>
     </div>
 )
 }

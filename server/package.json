@@ -5,11 +5,14 @@
   "main": "server.js",
   "scripts": {
     "start": "node index",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "load" : "node serverFunctions/loadDatabase",
+    "clear" : "node serverFunctions/clearDatabase"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.2.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
